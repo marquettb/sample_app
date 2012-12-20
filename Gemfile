@@ -13,9 +13,13 @@ group :development, :test do
   gem 'rspec-rails', '2.11.0'
 end
 
-
 group :development do
   gem 'annotate', '2.5.0'
+end
+
+group :test do
+  gem "rspec"
+  gem 'factory_girl_rails', '4.1.0', :require => false
 end
 
 group :test do
@@ -26,7 +30,7 @@ group :assets do
   gem 'sass-rails',   '3.2.5'
   gem 'coffee-rails', '3.2.2'
   gem 'uglifier', '1.2.3'
-  gem 'factory_girl_rails', '4.1.0'
+#  gem 'factory_girl_rails', '4.1.0'
 end
 
 group :test do
